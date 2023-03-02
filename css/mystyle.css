@@ -1,0 +1,641 @@
+/*page resetting*/
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background-color:#000;
+}
+
+/*header starts here*/
+header{
+	background-image: url(../images/main-picture.jpg);
+	/*background-size: cover;*/
+	background-position: center;
+	width: 1300px;
+	height: 700px;
+}
+
+header nav{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	padding: 50px;
+}
+
+header nav a{
+	text-decoration: none;
+	color:#fff;
+	text-transform: uppercase;
+}
+
+header div{
+	text-align: center;
+	padding-top: 300px;
+}
+
+header #hello{
+	font-size: 50px;
+	font-weight: lighter;
+	color: #fff;
+}
+
+header #fullname{
+	font-weight: bolder;
+	font-size: 70px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+header p{
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+/*header ends here*/
+
+/*main section starts here*/
+
+
+/*main section ends here*/
+#portfolio{
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+}
+
+#portfolio h2{
+	color: #fff;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#portfolio ul{
+	display: flex;
+	list-style-type: none;
+	padding-bottom: 30px;
+	padding-left: 300px;
+	padding-right: 300px;
+	justify-content: space-evenly;
+	align-content: center;
+	font-size: 13px;
+}
+
+#portfolio ul a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.product{
+	display: flex;
+}
+
+#products img{
+	width: 300px;
+}
+
+#products div{
+	padding-right: 80px;
+	padding-top: 20px;
+}
+
+#products h4{
+	color: #fff;
+	text-align: center;
+}
+
+#products h5{
+	text-align: center;
+	color: #fff;
+}
+
+#resume{
+	padding: 50px;
+}
+
+#resume h2{
+	color: #fff;
+	text-align: center;
+	padding-top: 100px;
+	text-transform: capitalize;
+}
+
+#resume h2 span{
+	font-weight: lighter;
+}
+
+#education-experience{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 20px;
+}
+
+#education > div{
+	border: 0px solid black;
+	padding: 30px;
+	background-color: rgba(20, 30, 40, 1.0);
+	width: 500px;
+	height: 180px;
+	margin: 20px;
+}
+
+#education > div > h5{
+	color: #fff;
+	padding-bottom: 10px;
+	font-size: 10px;
+}
+
+#education > div > h3{
+	color: yellow;
+	padding-bottom: 10px;
+	font-weight: lighter;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+
+#education > div > p{
+	color: #000;
+	padding-bottom: 10px;
+}
+
+#education > h3{
+	color: #fff;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+#experience > h3{
+	color: #fff;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+#experience > div{
+	border: 0px solid black;
+	padding: 30px;
+	background-color: rgba(20, 30, 40, 1.0);
+	width: 500px;
+	height: 180px;
+	margin: 20px;
+}
+
+#experience > div > h5{
+	color: #fff;
+	padding-bottom: 10px;
+	font-size: 10px;
+}
+
+#experience > div > h3{
+	color: yellow;
+	padding-bottom: 10px;
+	font-weight: lighter;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+
+#experience > div > p{
+	color: #000;
+	padding-bottom: 10px;
+}
+
+#about{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding: 50px;
+	padding-top: 100px;
+}
+
+#about img{
+	width: 900px;
+	height: 400px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#aboutme{
+	padding-top: 100px;
+}
+
+#aboutme > h3{
+	padding-bottom: 20px;
+	text-transform: capitalize;
+	font-weight: lighter;
+}
+
+#aboutme > h3 > span{
+	font-weight: bold;
+}
+
+#aboutme > p{
+	padding-bottom: 20px;
+}
+
+#hire{
+	border-radius: 30px;
+	background-color: yellow;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+#cv{
+	border-radius: 30px;
+	background-color: rgba(20, 30, 40, 0.8);
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+#myservices{
+	padding: 100px 50px;
+}
+
+#myservices > h3{
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 20px;
+	text-transform: capitalize;
+	font-weight: lighter;
+}
+
+#myservices > h3 > span{
+	font-weight: bold;
+}
+
+#service{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#service > div{
+	border: 0px solid black;
+	background-color: rgba(20, 30, 40, 1.0);
+	margin: 20px;
+	width: 350px;
+	height: 400px;
+	padding: 20px;
+}
+
+#service >div > a{
+	text-decoration: none;
+	color: yellowgreen;
+	text-transform: capitalize;
+}
+
+#service > div > img{
+	width: 100px;
+	height: 130px;
+	padding-bottom: 20px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius:100%; 
+	border-radius:100%;
+	align-content: center;
+
+}
+
+#service > div > h4{
+	align-content: center;
+	padding-bottom: 20px;
+}
+
+#service > div > p{
+	padding-bottom: 20px;
+}
+
+#blog{
+	padding: 50px 20px;
+}
+
+#blog > h3{
+	text-align: center;
+	font-weight: lighter;
+	padding-bottom: 30px;
+	color: white;
+	font-size: 32px;
+}
+
+#blog > h3 > span{
+	font-weight: bold;
+}
+
+#blog-on-medium{
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+#blog-on-medium > div{
+	border: 0px solid black;
+	background-color: rgba(20, 30, 40, 0.8);
+	margin: 20px;
+	height: 380px;
+}
+
+#blog-on-medium > div > img{
+	width: 380px;
+	height: 200px;
+}
+
+#blog-on-medium > div > h3{
+	color: white;
+	padding: 20px;
+	text-transform: capitalize;
+	font-weight: lighter;
+}
+
+#blog-on-medium > div > p{
+	color: white;
+	padding: 20px;
+	font-size: 12px;
+}
+
+#blog-on-medium > div > span{
+	color: white;
+	padding: 20px;
+	font-size: 10px;
+}
+/*main section ends here*/
+
+/*footer section starts here*/
+footer{
+	padding: 50px;
+}
+footer > h3{
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-weight: lighter;
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 32px;
+}
+
+footer > h3 > span{
+	font-weight: bold;
+}
+
+#intouch{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	padding: 20px 50px;
+}
+
+#getintouch h3{
+	font-weight: lighter;
+	padding-bottom: 50px;
+	text-transform: capitalize;
+}
+
+input{
+	margin-bottom: 20px;
+}
+
+textarea{
+	margin-bottom: 20px;
+}
+
+#name{
+	background-color: rgba(20, 30, 40, 0.8);
+	width: 500px;
+	height: 40px;
+}
+
+#email{
+	background-color: rgba(20, 30, 40, 0.8);
+	width: 500px;
+	height: 40px;
+}
+
+#yourphone{
+	background-color: rgba(20, 30, 40, 0.8);
+	width: 500px;
+	height: 40px;
+}
+
+#message{
+	background-color: rgba(20, 30, 40, 0.8);
+	width: 500px;
+	height: 300px;
+}
+
+#button{
+	background-color: yellowgreen;
+	border-radius: 25px;
+	padding: 10px 20px;
+	color: white;
+	text-transform: uppercase;
+}
+
+#contact{
+	padding-right: 300px;
+	padding-left: 50px;
+}
+
+#contact > h3{
+	padding-bottom: 50px;
+	text-transform: capitalize;
+	font-weight: lighter;
+}
+
+#contact > div{
+	padding-bottom: 20px;
+}
+
+#contact > div > p{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+#contact > div > h5{
+	color: darkblue;
+	text-transform: uppercase;
+}
+/*footer section ends here*/
+
+/*MEDIA QUERY FOR RESPONSIVENESS HERE*/
+@media(max-width: 320px){
+	header nav{
+		flex-direction: column;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	header nav a{
+		font-size: 10px;
+	}
+
+	header div{
+		text-align: left;
+		padding-top: 80px;
+		padding-left: 80px;
+	}
+
+	header{
+		width: 350px;
+		height: 400px;
+		background-size: cover;
+	}
+
+	header > div > #hello{
+		font-size: 20px;
+	}
+
+	header > div > #fullname{
+		font-size: 20px;
+	}
+
+	header > div > p{
+		font-size: 10px;
+	}
+
+	/*main section*/
+	#portfolio{
+		padding-left: 10px;
+		padding-right: 0px;
+		padding-bottom:50px ;
+		padding-top: 50px;
+	}
+
+	#portfolio ul{
+		flex-direction: column;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		padding-right: 0px;
+	}
+
+	.product{
+		flex-direction: column;
+		padding-left: 10px;
+		padding-right: 0px;
+	}
+
+	#resume{
+		padding-top: 10px;
+		padding-left: 0px;
+	}
+
+	#resume h2{
+		padding-top: 10px;
+		padding-left: 0px;
+	}
+
+	#education-experience{
+		flex-direction: column;
+		padding-left: 0px;
+	}
+
+	#education-experience div{
+		width: 320px;
+	}
+
+	#experience > #intern{
+		height: 250px;
+	}
+
+	#about{
+		flex-direction: column;
+		padding-left: 10px;
+		padding-right: 0px;
+	}
+
+	#about > img{
+		padding-left: 10px;
+		width: 400px;
+		height: 300px;
+	}
+
+	#aboutme{
+		padding-top: 30px;
+		padding-right: 0px;
+		padding-left: 10px;
+	}
+
+	#myservices{
+		padding-left: 0px;
+	}
+
+	#service{
+		flex-direction: column;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#service > div{
+		width: 320px;
+		height: 450px;
+	}
+
+	#blog{
+		padding-left: 0px;
+	}
+
+	#blog h3{
+		padding-left: 0px;
+	}
+
+	#blog-on-medium{
+		flex-direction: column;
+		padding-left: 0px;
+	}
+
+	#blog-on-medium div{
+		height: 400px;
+		width: 320px;
+	}
+
+	#blog-on-medium div img{
+		width: 320px;
+	}
+
+	/*footer*/
+	footer{
+		padding-left: 0px;
+	}
+
+	footer h3{
+		padding-left: 0px;
+	}
+
+	#intouch{
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 0px;
+	}
+
+	#name{
+		width: 320px;
+	}
+
+	#email{
+		width: 320px
+	}
+
+	#yourphone{
+		width: 320px
+	}
+
+	#message{
+		width: 320px
+	}
+
+	#contact{
+		padding-left: 10px;
+		padding-top: 30px;
+		padding-right: 0px;
+	}
+
+	#contact > h3{
+		padding-bottom: 20px;
+	}
+}
