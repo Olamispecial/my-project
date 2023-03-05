@@ -6,6 +6,10 @@
 	font-family: sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background-color:#000;
 }
@@ -13,7 +17,6 @@ body{
 /*header starts here*/
 header{
 	background-image: url(../images/main-picture.jpg);
-	/*background-size: cover;*/
 	background-position: center;
 	width: 1300px;
 	height: 700px;
@@ -28,8 +31,13 @@ header nav{
 
 header nav a{
 	text-decoration: none;
-	color:#fff;
+	color:#000;
 	text-transform: uppercase;
+}
+
+header nav a:hover{
+	background-color: black;
+	font-size: 32px;
 }
 
 header div{
@@ -90,12 +98,20 @@ header p{
 	color: #fff;
 }
 
+#portfolio ul a:hover{
+	background-color: blue;
+}
+
 .product{
 	display: flex;
 }
 
 #products img{
 	width: 300px;
+}
+
+#products img:hover{
+	width: 350px;
 }
 
 #products div{
@@ -160,7 +176,7 @@ header p{
 }
 
 #education > div > p{
-	color: #000;
+	color: #fff;
 	padding-bottom: 10px;
 }
 
@@ -464,7 +480,7 @@ textarea{
 /*footer section ends here*/
 
 /*MEDIA QUERY FOR RESPONSIVENESS HERE*/
-@media(max-width: 320px){
+@media(min-width: 320px) and (max-width: 768px){
 	header nav{
 		flex-direction: column;
 		padding-left: 10px;
@@ -472,31 +488,29 @@ textarea{
 	}
 
 	header nav a{
-		font-size: 10px;
+		font-size: 20px;
 	}
 
 	header div{
-		text-align: left;
-		padding-top: 80px;
-		padding-left: 80px;
+		padding-top: 200px;
 	}
 
 	header{
-		width: 350px;
-		height: 400px;
+		width: 770px;
+		height: 600px;
 		background-size: cover;
 	}
 
 	header > div > #hello{
-		font-size: 20px;
+		font-size: 50px;
 	}
 
 	header > div > #fullname{
-		font-size: 20px;
+		font-size: 50px;
 	}
 
 	header > div > p{
-		font-size: 10px;
+		font-size: 20px;
 	}
 
 	/*main section*/
@@ -514,20 +528,43 @@ textarea{
 		padding-right: 0px;
 	}
 
+	#portfolio ul a{
+		font-size: 20px;
+	}
+
+	#portfolio > h2{
+		font-size: 30px;
+	}
+
 	.product{
 		flex-direction: column;
 		padding-left: 10px;
 		padding-right: 0px;
 	}
 
+	.product > div{
+		padding-left: 200px;
+		width: 500px;
+		height: 400px;
+	}
+
+	.product > div > h4{
+		font-size: 30px;
+	}
+
+	.product > div > h5{
+		font-size: 25px;
+	}
+
 	#resume{
 		padding-top: 10px;
-		padding-left: 0px;
+		padding-left: 20px;
 	}
 
 	#resume h2{
-		padding-top: 10px;
+		padding-top: 20px;
 		padding-left: 0px;
+		font-size: 50px;
 	}
 
 	#education-experience{
@@ -536,33 +573,86 @@ textarea{
 	}
 
 	#education-experience div{
-		width: 320px;
+		width: 650px;
 	}
 
-	#experience > #intern{
+	#education > h3{
+		font-size: 40px;
+	}
+
+	#education > div > h5{
+		font-size:20px ;
+	}
+
+	#education > div{
 		height: 250px;
+	}
+
+	#education > div > h3{
+		font-size: 30px;
+	}
+
+	#education > div > p{
+		font-size: 20px;
+	}
+
+	#experience > div{
+		height: 250px;
+	}
+
+	#experience > h3{
+		padding-top: 40px;
+		font-size: 40px;
+	}
+
+	#experience > div > h5{
+		font-size: 20px;
+	}
+
+	#experience > div > h3{
+		font-size: 30px;
+	}
+
+	#experience > div > p{
+		font-size: 20px;
 	}
 
 	#about{
 		flex-direction: column;
-		padding-left: 10px;
+		padding-left: 20px;
 		padding-right: 0px;
 	}
 
 	#about > img{
-		padding-left: 10px;
-		width: 400px;
-		height: 300px;
+		padding-left: 50px;
+		width: 600px;
+		height: 400px;
+	}
+	#aboutme > h3{
+		font-size: 50px;
+	}
+
+	#aboutme > p{
+		font-size: 30px;
+		padding-bottom: 35px;
+	}
+
+	#aboutme > a{
+		font-size: 30px;
 	}
 
 	#aboutme{
 		padding-top: 30px;
 		padding-right: 0px;
-		padding-left: 10px;
+		padding-left: 50px;
 	}
 
 	#myservices{
-		padding-left: 0px;
+		padding-left: 20px;
+	}
+
+	#myservices > h3{
+		font-size: 50px;
 	}
 
 	#service{
@@ -572,38 +662,66 @@ textarea{
 	}
 
 	#service > div{
-		width: 320px;
-		height: 450px;
+		width: 650px;
+		height: 500px;
+	}
+
+	#service h4{
+		color: #fff;
+		font-size: 30px;
+	}
+
+	#service p{
+		color: #fff;
+		font-size: 25px;
+	}
+
+	#service a{
+		font-size: 20px;
 	}
 
 	#blog{
-		padding-left: 0px;
+		padding-left: 20px;
 	}
 
-	#blog h3{
+	#blog > h3{
 		padding-left: 0px;
+		font-size: 50px;
+	}
+
+	#blog-on-medium > div > h3{
+		font-size: 30px;
+	}
+
+	#blog-on-medium > div > p{
+		font-size: 20px;
+	}
+
+	#blog-on-medium > div > span{
+		font-size: 15px;
 	}
 
 	#blog-on-medium{
 		flex-direction: column;
-		padding-left: 0px;
 	}
 
 	#blog-on-medium div{
-		height: 400px;
-		width: 320px;
+		height: 650px;
+		width: 600px;
 	}
 
 	#blog-on-medium div img{
-		width: 320px;
+		width: 600px;
+		height: 400px;
 	}
 
 	/*footer*/
 	footer{
-		padding-left: 0px;
+		padding-left: 20px;
 	}
 
-	footer h3{
+	footer > h3{
+		font-size: 50px;
 		padding-left: 0px;
 	}
 
@@ -613,20 +731,24 @@ textarea{
 		padding-right: 0px;
 	}
 
+	#intouch  h3{
+		font-size: 30px;
+	}
+
 	#name{
-		width: 320px;
+		width: 650px;
 	}
 
 	#email{
-		width: 320px
+		width: 650px
 	}
 
 	#yourphone{
-		width: 320px
+		width: 650px
 	}
 
 	#message{
-		width: 320px
+		width: 650px
 	}
 
 	#contact{
@@ -637,5 +759,13 @@ textarea{
 
 	#contact > h3{
 		padding-bottom: 20px;
+	}
+
+	#contact h5{
+		font-size: 20px;
+	}
+
+	#contact > div > p{
+		font-size: 20px;
 	}
 }
