@@ -31,8 +31,9 @@ header nav{
 
 header nav a{
 	text-decoration: none;
-	color:#fff;
+	color: darkblue;
 	text-transform: uppercase;
+	font-size: 20px;
 }
 
 header nav a:hover{
@@ -86,8 +87,8 @@ header p{
 	display: flex;
 	list-style-type: none;
 	padding-bottom: 30px;
-	padding-left: 300px;
-	padding-right: 300px;
+	padding-left: 100px;
+	padding-right: 100px;
 	justify-content: space-evenly;
 	align-content: center;
 	font-size: 13px;
@@ -96,6 +97,7 @@ header p{
 #portfolio ul a{
 	text-decoration: none;
 	color: #fff;
+	font-size: 20px;
 }
 
 #portfolio ul a:hover{
@@ -216,7 +218,7 @@ header p{
 }
 
 #experience > div > p{
-	color: #000;
+	color: #fff;
 	padding-bottom: 10px;
 }
 
@@ -310,16 +312,15 @@ header p{
 	width: 100px;
 	height: 130px;
 	padding-bottom: 20px;
+	margin-left: 100px;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
-	-ms-border-radius:100%; 
-	border-radius:100%;
-	align-content: center;
-
+	-ms-border-radius: 100%; 
+	border-radius: 100%;
 }
 
 #service > div > h4{
-	align-content: center;
+	margin-left: 130px;
 	padding-bottom: 20px;
 }
 
@@ -480,9 +481,8 @@ textarea{
 /*footer section ends here*/
 
 /*MEDIA QUERY FOR RESPONSIVENESS HERE*/
-@media(min-width: 320px) and (max-width: 768px){
+@media(min-width: 768px){
 	header nav{
-		flex-direction: column;
 		padding-left: 10px;
 		padding-top: 10px;
 	}
@@ -522,7 +522,7 @@ textarea{
 	}
 
 	#portfolio ul{
-		flex-direction: column;
+		/*flex-direction: column;*/
 		padding-left: 20px;
 		padding-bottom: 20px;
 		padding-right: 0px;
@@ -536,6 +536,10 @@ textarea{
 		font-size: 30px;
 	}
 
+	#products > div{
+		padding-right: 0px;
+	}
+
 	.product{
 		flex-direction: column;
 		padding-left: 10px;
@@ -543,9 +547,14 @@ textarea{
 	}
 
 	.product > div{
-		padding-left: 200px;
+		padding-left: 150px;
 		width: 500px;
 		height: 400px;
+	}
+
+	.product > img{
+		width: 400px;
+		height: 300px;
 	}
 
 	.product > div > h4{
@@ -624,7 +633,9 @@ textarea{
 	}
 
 	#about > img{
-		padding-left: 50px;
+		padding-left: 150px;
+		padding-right: 0px;
+		padding-bottom: 50px;
 		width: 600px;
 		height: 400px;
 	}
@@ -664,6 +675,22 @@ textarea{
 	#service > div{
 		width: 650px;
 		height: 500px;
+	}
+
+	#service > div > img{
+		/*width: 100px;*/
+		/*height: 130px;*/
+		/*padding-bottom: 20px;*/
+		margin-left: 250px;
+		/*-webkit-border-radius: 100%;*/
+		/*-moz-border-radius: 100%;*/
+		/*-ms-border-radius: 100%; */
+		/*border-radius: 100%;*/
+	}
+
+	#service > div > h4{
+		margin-left: 250px;
+		/*padding-bottom: 20px;*/
 	}
 
 	#service h4{
